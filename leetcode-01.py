@@ -1,5 +1,5 @@
-class Solution:
-    def twosum(self, nums: list[3,1,5,2], target: 4) -> list[int]:
+class Solution(object):
+    def twosum(self, nums, target):
         prevMap = {}
         for i , n in enumerate(nums):
             diff = target - n 
@@ -7,4 +7,16 @@ class Solution:
                 return [prevMap[diff], i]
             prevMap[n]=i
         return
-Solution()
+
+# class Solution(object):
+#     def twosum(self, nums, target):
+#         keymap={}
+#         for i in range(len(nums)):
+#             if target - nums[i] in keymap:
+#                 return [keymap[target-nums[i],i]]
+#             if nums[i] not in keymap:
+#                 keymap[nums[i]] = i
+
+nums= [2,3,5,7,11,13]
+target=9
+print(Solution().twosum(nums,target))
