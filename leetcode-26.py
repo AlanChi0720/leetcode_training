@@ -5,3 +5,7 @@ def removeDuplicates(nums: list[int]) -> int:
             nums[l] =nums[i]
             l += 1
     return l
+
+nums = [0,0,1,1,1,2,2,3,3,4]
+res = removeDuplicates(nums)
+print(res)

@@ -6,7 +6,7 @@ def plusOne(digits: list[int]) -> list[int]:
             if digits[i] == 9:
                 digits[i] =0
                 one = 1
-            else:
+            else: # first digit is not 9 will does into this if and end
                 digits[i] +=1
                 one = 0
         else:

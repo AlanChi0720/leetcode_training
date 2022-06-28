@@ -45,11 +45,8 @@ def addBinary(a: str, b: str) -> str:
     if carry: # carry != 0
         res = "1" +res
     return res
-        
-        
-
 
 a = "1010"
-b = "1011"
+b = "1111"
 res=addBinary(a,b)
 print(res)

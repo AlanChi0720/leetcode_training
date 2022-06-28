@@ -17,7 +17,7 @@
 #         return 0
 
 def strStr(haystack: str, needle: str) -> int:
-    if not needle:
+    if not needle: # if needle == 0
         return 0
     if needle in haystack:
         index = haystack.index(needle)
@@ -25,17 +25,16 @@ def strStr(haystack: str, needle: str) -> int:
     else:
         return -1
 
-# def strStr(haystack: str, needle: str) -> int:
-#     if not needle:
-#         return 0
-#     for i in range(len(haystack)+1 -len(needle)):
-#         if haystack[i: i+len(needle)] == needle:
-#             return i
-#     return -1
+def strStr(haystack: str, needle: str) -> int:
+    if not needle:
+        return 0
+    for i in range(len(haystack)+1 -len(needle)):
+        if haystack[i: i+len(needle)] == needle:
+            return i
+    return -1
 
 haystack = "hello"
 needle = "ll"
-
 # haystack = "aaaaa"
 # needle = "baa"
 res = strStr(haystack, needle)

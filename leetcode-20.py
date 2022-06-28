@@ -38,22 +38,23 @@
 #         else:
 #             return True
 
-def isValid(s: str) -> bool:
+def isValid(s: str) -> bool: # hashmap
     list=[]
     check={ ')':'(', ']':'[', '}':'{'}
     for i in s:
-        if i in check:
-            if not not list and list[-1] == check[i]:
+        if i in check: # check if )]}
+            if list != 0 and list[-1] == check[i]: # if lsit == if list != 0 == if not not list
                 list.pop()
             else:
                 return False
-        else:
+        else: # if start with ([{ will goes in first, and put them into list
             list.append(i)
-    # return True if not list else False
-    if not list:
-        return True
-    else:
-        return False
+
+    return True if not list else False
+    # if not list:
+    #     return True
+    # else:
+    #     return False
 
 s = "(())"
 print(isValid(s))
