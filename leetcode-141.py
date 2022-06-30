@@ -1,6 +1,3 @@
-from math import trunc
-
-
 class ListNode: # bulit a listnode type
     def __init__(self, val=0, next=None):
         self.val = val

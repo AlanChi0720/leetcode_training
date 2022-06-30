@@ -17,7 +17,7 @@
 #         return 0
 
 def strStr(haystack: str, needle: str) -> int:
-    if not needle: # if needle == 0
+    if not needle: # if needle == 0 if needle == none:
         return 0
     if needle in haystack:
         index = haystack.index(needle)

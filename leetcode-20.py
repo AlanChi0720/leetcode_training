@@ -51,9 +51,9 @@ def isValid(s: str) -> bool: # hashmap
             list.append(i)
 
     return True if not list else False
-    # if not list:
+    # if not list: if list == None:
     #     return True
-    # else:
+    # else: if list != None:
     #     return False
 
 s = "(())"
