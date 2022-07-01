@@ -53,7 +53,6 @@ class Solution:
             tail.next =list1
         else:
             tail.next =list2
-
         return dummy.next
 
 # list1 = [1,2,4]
