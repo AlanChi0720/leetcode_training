@@ -26,10 +26,11 @@ class Linkedlist(): # bulit a linkedlistt object
 #         while head:
 #             if head.val == val:
 #                 tail.next = head.next
-#                 head = tail.next
+#                 #head = tail.next
 #             else:
 #                 tail = head
-#                 head = head.next      
+#                 #head = head.next 
+#             head = head.next      
 #         return dummy.next
 
 class Solution:
