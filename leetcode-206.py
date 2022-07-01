@@ -19,25 +19,25 @@ class Linkedlist(): # bulit a linkedlistt object
             print(node.val)
             node = node.next
 
-# class Solution: # iteratively: time O(n) space O(1)
-#     def reverseList(self, head):
-#         if not head:
-#             return None
-#         ans, p1, p2 = head, head, head
-#         ans = ans.next
-#         p1 = ans
-#         p2.next = None
-#         while ans:
-#             ans = ans.next
-#             p1.next = p2
-#             p2 = p1
-#             p1 = ans
-#         return p2
+class Solution: # iteratively: time O(n) space O(1)
+    def reverseList(self, head):
+        if not head:
+            return None
+        ans, p1, p2 = head, head, head
+        ans = ans.next
+        p1 = ans
+        p2.next = None
+        while ans:
+            ans = ans.next
+            p1.next = p2
+            p2 = p1
+            p1 = ans
+        return p2
 class Solution: # recursively: time O(n) space O(n)
     def reverseList(self, head):  
         if not head:
             return None
-        # ans = head
+        ans = head
         if head.next:
             ans = self.reverseList(head.next)
             head.next.next = head
