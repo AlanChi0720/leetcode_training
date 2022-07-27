@@ -23,17 +23,6 @@ def climbStairs(n: int) -> int: # Top down memoization: backtracking
         return cache[n]
     return helper(n)
 
-def climbStairs(n: int) -> int: # Top down memoization: backtracking
-    cache={}
-    def helper(n):
-        if n in cache: 
-            return cache[n]
-        if n == 0 or n == 1: 
-            return 1
-        cache[n] = helper(n-1) + helper(n-2)
-        return cache[n]
-    return helper(n)
-
 # solution  URL = https://leetcode.com/problems/climbing-stairs/discuss/861070/Progression-of-python-solutions
 
 n = 5

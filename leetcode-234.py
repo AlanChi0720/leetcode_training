@@ -31,6 +31,7 @@ class Solution:
             return True
         else:
             return False
+            
 class Solution:
     def isPalindrome(self, head):
         nums = []

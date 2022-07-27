@@ -33,6 +33,7 @@ class Solution: # iteratively: time O(n) space O(1)
             p2 = p1
             p1 = ans
         return p2
+        
 class Solution: # recursively: time O(n) space O(n)
     def reverseList(self, head):  
         if not head:
