@@ -10,6 +10,7 @@ class Solution:
             if openN < n:
                 stack.append("(")
                 backtrack(openN +1, closeN)
+                print(stack)
                 stack.pop()
 
             if closeN < openN:
@@ -19,6 +20,6 @@ class Solution:
         backtrack(0,0)
         return res
 
-n = 3
+n = 2
 ans = Solution().generateParenthesis(n)
 print(ans)
